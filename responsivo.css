@@ -1,0 +1,197 @@
+@media (max-width: 1020px) {
+    /* ====================================SECTION NAVBAR===================================== */
+    .navbar { padding: 0 20px; }
+    .navbar__links { display: none; }
+    .navbar__cta { display: none; }
+    .navbar__hamburger { display: flex; }
+    
+  .navbar__hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+  }
+
+  .navbar__hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--white);
+    border-radius: 2px;
+    transition: transform 0.2s, opacity 0.2s;
+  }
+
+  .navbar__mobile-menu {
+    display: none;
+    position: fixed;
+    top: var(--nav-h); left: 0; right: 0;
+    background: var(--brown-dark);
+    padding: 24px 32px 32px;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 99;
+  }
+
+  .navbar__mobile-menu.open { display: flex; }
+
+  .navbar__mobile-menu a {
+    color: rgba(255,255,255,0.85);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 6px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .navbar__mobile-menu a:last-child { border-bottom: none; }
+    
+    /* ====================================SECTION HERO======================================== */
+
+    .hero__inner {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding: 40px 24px 60px;
+        text-align: center;
+    }
+
+    .hero__visual { order: -1; justify-content: center; }
+
+    .hero__img-wrap {
+        max-width: 450px;
+        aspect-ratio: 1 / 0.85;
+        border-radius: 70% 50% 65% 55% / 40% 80% 50% 90%;
+        margin: 0 auto;
+    }
+
+    .hero__badge {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -42px;
+        white-space: nowrap;
+    }
+
+    .hero__text { gap: 20px; padding-top: 16px; }
+    .hero__heading { font-size: clamp(1.8rem, 7.5vw, 2.8rem); line-height: 1.13; }
+    .hero__body { max-width: 100%; font-size: 0.95rem; }
+
+    .hero__btn {
+        align-self: stretch;
+        justify-content: center;
+        border-radius: 50px;
+        padding: 16px 24px;
+        font-size: 1rem;
+    }
+
+    /* =================================SECTION DORES=========================================== */
+    .dores__inner {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 40px 24px;
+    }
+
+    .dores__content { order: 1; }
+
+    .dores__visual {
+        order: 2;
+        width: 100%;
+    }
+
+    .dores__heading {
+        text-align: center;
+        font-size: clamp(1.6rem, 6vw, 2rem);
+    }
+
+    .dores__intro { text-align: center; }
+
+    .dores__item {
+   '     background: var(--white);
+        border-radius: 16px;
+        padding: 18px 20px;
+        box-shadow: 0 2px 12px rgba(61,31,14,0.06);
+        align-'items: center;
+    }
+
+    .dores__item--highlight {
+        background: var(--white);
+        border: none;
+    }
+    .dores__visual {
+     order: 2;
+    }
+
+    .dores__visual img {
+        max-width: 400px;
+        aspect-ratio: 5 / 5;
+        object-fit: cover;    /* Ativa o modo de corte (enquadramento) */
+        object-position: center 76%; /* Ajustar o enquadramento */
+        margin: 0 auto;
+    }
+
+    .dores__content {
+        order: 1;
+    }
+
+    /* =================================SECTION SOBRE=========================================== */
+    .sobre__visual { display: none; }
+
+    .sobre__visual-label { display: none; }
+
+    .sobre__heading-desktop { display: block; }
+
+    .sobre__inner {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 0;
+    text-align: center;
+    }
+
+    .sobre__content {
+    padding: 40px 24px;
+    gap: 24px;
+    align-items: center;
+    }
+
+    .sobre__heading {
+    font-size: clamp(1.6rem, 6vw, 2rem);
+    text-align: center;
+    }
+
+    .sobre__body {
+    font-size: 0.9rem;
+    text-align: center;
+    }
+
+    .sobre__body span {
+    display: none;
+    }
+
+    .sobre__list {
+    width: 100%;
+    gap: 12px;
+    }
+
+    .sobre__list-item {
+    background: rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 16px 18px;
+    justify-content: flex-start;
+    text-align: left;
+    }
+
+    .sobre__btn {
+    align-self: stretch;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50px;
+    padding: 16px 24px;
+    font-size: 1rem;
+    }
+
+    .sobre__wave-top svg,
+    .sobre__wave-bottom svg {
+    height: 70px;
+    }
+}

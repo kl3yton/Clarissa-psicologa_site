@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -11,9 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
 
     <!-- link para concetar documentos -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="transition.js">
-
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="responsivo.css"/>
 </head>
 <body>
     <!-- NAVBAR -->
@@ -28,12 +27,13 @@
             <li><a href="#faq">FAQ</a></li>
         </ul>
     
-        <button class="navbar__cta">
+        <a href="https://wa.me/83986640305" target="_blank" class="navbar__cta">
             Agendar Consulta
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
             </svg>
-        </button>
+        </a>
     
         <button class="navbar__hamburger" id="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
@@ -66,7 +66,7 @@
                 Aprenda a compreender seus pensamentos, regular suas emoções e desenvolver estratégias para enfrentar os desafios da vida com mais equilíbrio e confiança.
                 </p>
         
-                <a href="#agendar" class="hero__btn">
+                <a href="https://wa.me/83986640305"  target="_blank" class="hero__btn">
                 Agendar minha primeira consulta
                 </a>
             </div>
@@ -74,7 +74,7 @@
             <!-- Visual -->
             <div class="hero__visual">
                 <div class="hero__img-wrap">
-                    <img src="img/sectionum.jpg" alt="Clarissa Pinto">
+                    <img src="img/sectionum.webp" alt="Clarissa Pinto">
                 </div>
         
                 <!-- Badge "24 Anos" -->
@@ -93,5 +93,561 @@
     
         </div>
     </section>
+
+    <!-- SECTION DORES -->
+    <section class="dores" id="sobre">
+
+        <div class="dores__inner">
+
+            <!-- Foto -->
+            <div class="dores__visual">
+                <img src="img/sectiondois.webp" alt="Clarissa Pinto" />
+            </div>
+
+            <!-- Conteúdo -->
+            <div class="dores__content">
+            <h2 class="dores__heading">
+                Você não precisa carregar todo esse peso sozinho.
+            </h2>
+
+            <p class="dores__intro">
+                Em um mundo que exige cada vez mais de nós, é comum sentir que a mente não desliga. Momentos difíceis, cobranças internas e a sensação de estagnação podem drenar sua energia. Reconhecer que está pesado é o primeiro passo para a mudança.
+            </p>
+
+            <ul class="dores__list">
+                <li class="dores__item">
+                <div class="dores__icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div>
+                    <strong>Ansiedade constante</strong>
+                    <p>A mente sempre no futuro, antecipando problemas e gerando exaustão física e mental.</p>
+                </div>
+                </li>
+                <li class="dores__item">
+                <div class="dores__icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="9" x2="15" y2="15"/><line x1="15" y1="9" x2="9" y2="15"/></svg>
+                </div>
+                <div>
+                    <strong>Sensação de paralização</strong>
+                    <p>Querer mudar de vida, de hábitos ou de carreira, mas sentir-se travado emocionalmente.</p>
+                </div>
+                </li>
+                <li class="dores__item">
+                <div class="dores__icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                </div>
+                <div>
+                    <strong>Sobrecarga emocional</strong>
+                    <p>Lidar com perdas, transições difíceis ou crises nos relacionamentos sem saber como processar tudo isso.</p>
+                </div>
+                </li>
+                
+            </ul>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SEÇÃO SOBRE -->
+    <section class="sobre" id="como-funciona">
+
+        <!-- onda do topo -->
+        <div class="sobre__wave-top">
+            <svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path d="M0,60 C180,100 360,20 540,60 C720,100 900,20 1080,60 C1260,100 1380,40 1440,60 L1440,0 L0,0 Z" fill="#FAF7F4"/>
+            </svg>
+        </div>
+
+        <div class="sobre__inner">
+
+            <!-- Texto -->
+            <div class="sobre__content">
+            <h2 class="sobre__heading">
+                Ciência, experiência e muito acolhimento para transformar sua realidade.
+            </h2>
+
+            <p class="sobre__body">
+                Sou Clarissa Pinto, Psicóloga Clínica com mais de duas décadas dedicadas ao cuidado da saúde mental. Minha abordagem une a Terapia Cognitivo-Comportamental (TCC). <span> O padrão-ouro no tratamento da ansiedade e regulação emocional, com minha especialização em Psicologia do Esporte, trazendo ferramentas práticas de foco, resiliência e alta performance para o seu dia a dia. </span>
+            </p>
+
+            <ul class="sobre__list">
+                <li class="sobre__list-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                Intervenções baseadas em evidências científicas.
+                </li>
+                <li class="sobre__list-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                Foco no tempo presente e na solução de problemas atuais.
+                </li>
+                <li class="sobre__list-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                Ferramentas práticas que você aplica entre uma sessão e outra.
+                </li>
+            </ul>
+
+            <a href="https://wa.me/83986640305"  target="_blank" class="sobre__btn">Quero iniciar meu acompanhamento</a>
+            </div>
+
+            <!-- Foto -->
+            <div class="sobre__visual">
+            <img src="img/sectiuontres.webp" alt="Clarissa Pinto" />
+            </div>
+            
+
+        </div>
+
+        <!-- onda do fundo -->
+        <div class="sobre__wave-bottom">
+            <svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path d="M0,40 C180,0 360,80 540,40 C720,0 900,80 1080,40 C1260,0 1380,60 1440,40 L1440,100 L0,100 Z" fill="#FAF7F4"/>
+            </svg>
+        </div>
+
+    </section>
+
+    <!-- SEÇÃO BENEFÍCIOS -->
+    <section class="beneficios" id="beneficios">
+    <div class="beneficios__inner">
+
+        <div class="beneficios__header">
+        <h2 class="beneficios__heading">O que você ganha com a terapia</h2>
+        <p class="beneficios__sub">Tangibilize a transformação e descubra como o acompanhamento pode melhorar sua rotina.</p>
+        </div>
+
+        <div class="beneficios__grid">
+
+        <div class="beneficios__card">
+            <div class="beneficios__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+            </div>
+            <h3>Manejo Efetivo da Ansiedade</h3>
+            <p>Entenda os gatilhos da sua ansiedade e aprenda técnicas comprovadas para recuperar o controle das suas reações e emoções.</p>
+        </div>
+
+        <div class="beneficios__card">
+            <div class="beneficios__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            </div>
+            <h3>Fortalecimento Comportamental</h3>
+            <p>Construa novos hábitos e habilidades emocionais que sustentem seus objetivos de vida, carreira ou esporte a longo prazo.</p>
+        </div>
+
+        <div class="beneficios__card">
+            <div class="beneficios__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <h3>Clareza e Tomada de Decisão</h3>
+            <p>Organize seus pensamentos, reduza o ruído mental e sinta-se segura para tomar as decisões necessárias em momentos de crise.</p>
+        </div>
+
+        <div class="beneficios__card">
+            <div class="beneficios__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            </div>
+            <h3>Qualidade de Vida Real</h3>
+            <p>A terapia não é apenas sobre tratar dores, mas sobre otimizar sua vida. Volte a ter noites de sono tranquilas e dias com mais propósito.</p>
+        </div>
+
+        </div>
+    </div>
+    </section>
+
+    <!-- SEÇÃO COMO FUNCIONA -->
+    <section class="processo" id="como-funciona">
+    <div class="processo__inner">
+
+        <div class="processo__header">
+        <h2 class="processo__heading">Um processo simples e acolhedor</h2>
+        <p class="processo__sub">Reduzindo a ansiedade do primeiro contato. Um passo a passo estruturado e seguro para sua evolução.</p>
+        </div>
+
+        <div class="processo__steps">
+
+        <!-- linha conectora -->
+        <div class="processo__linha"></div>
+
+        <div class="processo__step">
+            <div class="processo__numero">1</div>
+            <h3>O Primeiro Contato</h3>
+            <p>Você clica no botão do WhatsApp, fala diretamente com minha equipe e encontramos o melhor horário.</p>
+        </div>
+
+        <div class="processo__step">
+            <div class="processo__numero">2</div>
+            <h3>A Sessão de Acolhimento</h3>
+            <p>Nosso primeiro encontro. Fale livremente, sem julgamentos, para que eu entenda sua demanda.</p>
+        </div>
+
+        <div class="processo__step">
+            <div class="processo__numero">3</div>
+            <h3>Mapeamento e Plano</h3>
+            <p>Com base na TCC, estruturamos objetivos. Entendo como pensamentos afetam sentimentos.</p>
+        </div>
+
+        <div class="processo__step">
+            <div class="processo__numero">4</div>
+            <h3>Desenvolvimento</h3>
+            <p>Sessões regulares trabalhando habilidades práticas rumo à sua alta terapêutica.</p>
+        </div>
+
+        </div>
+
+        <div class="processo__cta">
+        <a href="https://wa.me/83986640305" target="_blank" class="processo__btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+            Falar com a Clarissa no WhatsApp
+        </a>
+        </div>
+
+    </div>
+    </section>
+
+    <!-- SEÇÃO LEGADO -->
+    <section class="legado" id="sobre">
+    <div class="legado__inner">
+
+        <!-- Texto -->
+        <div class="legado__content">
+        <h2 class="legado__heading">
+            Um legado de cuidado, ética e dedicação à saúde mental.
+        </h2>
+
+        <p class="legado__body">
+            A verdadeira psicologia se constrói com consistência, atualização científica e profundo respeito pela história de cada paciente que entra no consultório.
+        </p>
+
+        <div class="legado__grid">
+            <div class="legado__card">
+            <strong>+25 Anos</strong>
+            <span>Experiência dedicada à Psicologia Clínica.</span>
+            </div>
+            <div class="legado__card">
+            <strong>TCC</strong>
+            <span>Formação sólida na abordagem mais eficaz.</span>
+            </div>
+            <div class="legado__card">
+            <strong>Alta Performance</strong>
+            <span>Psicologia do Esporte e Exercício.</span>
+            </div>
+            <div class="legado__card">
+            <strong>Constante</strong>
+            <span>Centenas de horas de atualização.</span>
+            </div>
+        </div>
+        </div>
+
+        <!-- Foto -->
+        <div class="legado__visual">
+        <img src="img/sectionseis.webp" alt="Clarissa Pinto" />
+        </div>
+
+    </div>
+    </section>
+
+    <!-- SEÇÃO LOCALIZAÇÃO -->
+    <section class="localizacao" id="contato">
+    <div class="localizacao__inner">
+
+        <div class="localizacao__content">
+
+        <!-- Mapa -->
+        <div class="localizacao__mapa">
+    <!-- Mapa incorporado oficialmente -->
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.0837562094255!2d-34.82559042421946!3d-7.114350870944047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acdd2698a98d63%3A0xc0ce2dba664bebbe!2sCond%20Maison%20D&#39;Etoile%20Residencial%20e%20Lojas%20Comerciais!5e0!3m2!1spt-BR!2sbr!4v1719951600000!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>
+        <!-- Infos -->
+        <div class="localizacao__infos">
+
+            <div class="localizacao__info-card">
+            <div class="localizacao__info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+                <strong>Endereço</strong>
+                <span>Av. Paulista, 1000 – Bela Vista<br>Vila Madalena, São Paulo – SP</span>
+            </div>
+            </div>
+
+            <div class="localizacao__info-card">
+            <div class="localizacao__info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+                <strong>E-mail</strong>
+                <span>contato@clarissapinto.com.br</span>
+            </div>
+            </div>
+
+            <div class="localizacao__info-card">
+            <div class="localizacao__info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.59 3.47 2 2 0 0 1 3.56 1.29h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.84a16 16 0 0 0 6 6l.86-.86a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.02z"/></svg>
+            </div>
+            <div>
+                <strong>Telefone</strong>
+                <span>(83) 98664-0305</span>
+            </div>
+            </div>
+
+            <a href="https://wa.me/83986640305" target="_blank" class="localizacao__btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+            Falar pelo WhatsApp
+            </a>
+
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- SEÇÃO POR QUE ESCOLHER -->
+    <section class="porque" id="beneficios">
+    <div class="porque__inner">
+
+        <h2 class="porque__heading">Por que escolher este acompanhamento?</h2>
+
+        <div class="porque__grid">
+
+        <div class="porque__card">
+            <div class="porque__icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <div>
+            <strong>Metodologia Ativa (TCC)</strong>
+            <p>Não é uma terapia onde apenas você fala e o psicólogo fica em silêncio. É uma construção colaborativa, ativa e focada em te dar ferramentas.</p>
+            </div>
+        </div>
+
+        <div class="porque__card">
+            <div class="porque__icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <div>
+            <strong>Visão Esportiva Aplicada</strong>
+            <p>Técnicas de resiliência e foco mental de atletas de alto rendimento adaptadas para executivos, estudantes e para a vida diária.</p>
+            </div>
+        </div>
+
+        <div class="porque__card">
+            <div class="porque__icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <div>
+            <strong>Flexibilidade de Formatos</strong>
+            <p>Atendimento Presencial com total conforto, ou Atendimento Online com a mesma eficácia para qualquer lugar do mundo.</p>
+            </div>
+        </div>
+
+        <div class="porque__card">
+            <div class="porque__icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <div>
+            <strong>Sigilo & Ética Inegociáveis</strong>
+            <p>Um ambiente livre de qualquer julgamento, pautado pelas mais rigorosas diretrizes éticas do Conselho Federal de Psicologia.</p>
+            </div>
+        </div>
+
+        </div>
+    </div>
+    </section>
+
+    <!-- SEÇÃO FAQ -->
+    <section class="faq" id="faq">
+
+    <div class="faq__wave-top">
+        <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,40 C120,0 240,80 360,40 C480,0 600,80 720,40 C840,0 960,80 1080,40 C1200,0 1320,80 1440,40 L1440,0 L0,0 Z" fill="#FAF7F4"/>
+        </svg>
+    </div>
+
+    <div class="faq__inner">
+
+        <h2 class="faq__heading">Dúvidas Frequentes</h2>
+
+        <div class="faq__list">
+
+        <div class="faq__item">
+            <button class="faq__pergunta">
+            1. Como funciona a terapia online? É tão eficaz quanto a presencial?
+            <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq__resposta">
+            <p>Sim! Estudos comprovam que a terapia online tem a mesma eficácia que a presencial. Você se conecta de onde estiver, com conforto e privacidade, sem abrir mão da qualidade do atendimento.</p>
+            </div>
+        </div>
+
+        <div class="faq__item">
+            <button class="faq__pergunta">
+            2. Quanto tempo dura cada sessão?
+            <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq__resposta">
+            <p>Cada sessão tem duração de 50 minutos, seguindo o padrão clínico estabelecido para garantir foco e aproveitamento máximo do tempo terapêutico.</p>
+            </div>
+        </div>
+
+        <div class="faq__item">
+            <button class="faq__pergunta">
+            3. Com qual frequência preciso fazer as sessões?
+            <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq__resposta">
+            <p>O ideal é uma sessão por semana, especialmente no início do processo. Com a evolução, podemos espaçar para quinzenal conforme sua necessidade.</p>
+            </div>
+        </div>
+
+        <div class="faq__item">
+            <button class="faq__pergunta">
+            4. Vocês aceitam plano de saúde?
+            <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq__resposta">
+            <p>No momento o atendimento é particular. Porém, emitimos recibo para reembolso em planos que cobrem psicoterapia. Consulte seu plano para verificar a cobertura.</p>
+            </div>
+        </div>
+
+        <div class="faq__item">
+            <button class="faq__pergunta">
+            5. O que é a Terapia Cognitivo-Comportamental (TCC)?
+            <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq__resposta">
+            <p>A TCC é uma abordagem científica que identifica e modifica padrões de pensamento e comportamento que causam sofrimento. É estruturada, prática e com resultados comprovados.</p>
+            </div>
+        </div>
+
+        <div class="faq__item">
+            <button class="faq__pergunta">
+            6. Nunca fiz terapia, como vou saber o que falar?
+            <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq__resposta">
+            <p>Não se preocupe! A primeira sessão é de acolhimento. Eu guio a conversa com perguntas e você fala no seu ritmo, sem pressão. Não existe certo ou errado.</p>
+            </div>
+        </div>
+
+        <div class="faq__item">
+            <button class="faq__pergunta">
+            7. Quais são os valores das sessões e formas de pagamento?
+            <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq__resposta">
+            <p>Os valores são informados diretamente pelo WhatsApp. Aceitamos Pix, cartão de crédito e débito. Entre em contato para saber mais.</p>
+            </div>
+        </div>
+
+        <div class="faq__item">
+            <button class="faq__pergunta">
+            8. Posso remarcar uma sessão se tiver um imprevisto?
+            
+            <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq__resposta">
+            <p>Sim, desde que avisado com pelo menos 24 horas de antecedência. Remarcações com menos de 24h podem ser cobradas integralmente.</p>
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+    <div class="faq__wave-bottom">
+        <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,40 C120,80 240,0 360,40 C480,80 600,0 720,40 C840,80 960,0 1080,40 C1200,80 1320,0 1440,40 L1440,80 L0,80 Z" fill="#FAF7F4"/>
+        </svg>
+    </div>
+    </section>
+
+    <!-- SEÇÃO CTA FINAL -->
+    <section class="cta-final">
+    <div class="cta-final__inner">
+
+        <h2 class="cta-final__heading">
+        Cuidar da sua mente é o maior investimento que você fará na sua vida.
+        </h2>
+
+        <p class="cta-final__body">
+        As vagas para novos pacientes são limitadas para garantir a qualidade e a atenção que cada pessoa merece. Não adie mais o seu bem-estar.
+        </p>
+
+        <p class="cta-final__body">
+        Clique no botão abaixo para conversar com a nossa equipe, tirar suas últimas dúvidas e agendar sua primeira sessão.
+        </p>
+
+        <a href="https://wa.me/83986640305" target="_blank" class="cta-final__btn">
+        Quero agendar minha sessão
+        </a>
+
+    </div>
+    </section>
+
+
+    <script src="transition.js"></script>  
 </body>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__inner">
+
+    <!-- Logo + descrição -->
+    <div class="footer__brand">
+      <div class="footer__logo">Clarissa Pinto</div>
+      <p class="footer__desc">Psicóloga Clínica especialista em desenvolvimento emocional e Psicologia do Esporte.</p>
+      <div class="footer__socials">
+        <a href="https://instagram.com" target="_blank" class="footer__social" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="https://wa.me/83986640305" target="_blank" class="footer__social" aria-label="WhatsApp">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Navegação -->
+    <div class="footer__nav">
+      <strong>Navegação</strong>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#beneficios">Benefícios</a></li>
+        <li><a href="#como-funciona">Como Funciona</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+
+    <!-- Contato -->
+    <div class="footer__contato">
+      <strong>Contato</strong>
+      <ul>
+        <li>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          contato@clarissapinto.com.br
+        </li>
+        <li>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.59 3.47 2 2 0 0 1 3.56 1.29h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.84a16 16 0 0 0 6 6l.86-.86a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.02z"/></svg>
+          (83) 98664-0305
+        </li>
+        <li>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Av. Paulista, 1000 – São Paulo, SP
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Bottom bar -->
+ <div class="footer__bottom">
+    <span>© 2026 Clarissa Pinto. Todos os direitos reservados.</span>
+    <span class="footer__dev">
+      Desenvolvido por 
+      <a href="https://cocreate.com.br/" target="_blank" rel="noopener noreferrer" class="logo-mark">
+        <img src="img/cocreate.webp" alt="Cocreate">
+      </a>
+    </span>
+</div>
+
+</footer>
 </html>
