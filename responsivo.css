@@ -48,7 +48,7 @@
 
   .navbar__mobile-menu a:last-child { border-bottom: none; }
     
-    /* ====================================SECTION HERO======================================== */
+    /* ====================================SECTION HERO====================================== */
 
     .hero__inner {
         grid-template-columns: 1fr;
@@ -85,7 +85,7 @@
         font-size: 1rem;
     }
 
-    /* =================================SECTION DORES=========================================== */
+    /* =================================SECTION DORES========================================= */
     .dores__inner {
         grid-template-columns: 1fr;
         gap: 24px;
@@ -118,9 +118,6 @@
         background: var(--white);
         border: none;
     }
-    .dores__visual {
-     order: 2;
-    }
 
     .dores__visual img {
         max-width: 400px;
@@ -134,7 +131,7 @@
         order: 1;
     }
 
-    /* =================================SECTION SOBRE=========================================== */
+    /* ================================SECTION SOBRE========================================== */
     .sobre__visual { display: none; }
 
     .sobre__visual-label { display: none; }
@@ -193,5 +190,217 @@
     .sobre__wave-top svg,
     .sobre__wave-bottom svg {
     height: 70px;
+    }
+
+    /* ===============================SECTION BENEFICIOS===================================== */
+
+    .beneficios__inner { padding: 0 24px; gap: 32px; }
+
+    .beneficios__header { text-align: center; }
+
+    .beneficios__grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    }
+
+    .beneficios__card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 24px 20px;
+    }
+
+    .beneficios__icon {
+    border-radius: 8px;
+    }
+
+    .beneficios__card h3 {
+    font-size: 1.05rem;
+    }
+
+    .beneficios__card p {
+    font-size: 0.9rem;
+    }
+
+    /* ===============================SECTION COMO FUNCIONA========================================= */
+
+  .processo__inner { padding: 0 24px; gap: 40px; }
+
+  .processo__steps {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .processo__linha { display: none; }
+
+  .processo__step {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    padding-bottom: 32px;
+    position: relative;
+  }
+
+  /* linha vertical conectando os steps */
+  .processo__step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 32px;
+    background: rgba(255,255,255,0.2);
+  }
+
+  .processo__numero {
+    width: 52px;
+    height: 52px;
+    font-size: 1.1rem;
+  }
+
+  .processo__step h3 {
+    font-size: 1rem;
+  }
+
+  .processo__step p {
+    font-size: 0.88rem;
+    max-width: 280px;
+  }
+
+  .processo__btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+
+    /* ===============================SECTION LEGADO========================================= */
+    .legado__inner {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding: 0 24px;
+    }
+
+    .legado__visual {
+        order: -2;
+    }
+
+    .legado__visual img {
+        aspect-ratio: 4/3;
+        border-radius: 16px;
+    }
+
+    .legado__heading {
+        font-size: clamp(1.6rem, 6vw, 2rem);
+        text-align: center;
+    }
+
+    .legado__body {
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    .legado__grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        order: 1;
+    }
+
+    .legado__card {
+        padding: 16px 14px;
+    }
+
+    .legado__card strong {
+        font-size: 0.88rem;
+    }
+
+    .legado__card span {
+        font-size: 0.75rem;
+    }
+
+    .legado__visual img {
+        max-width: 350px;
+        aspect-ratio: 5 / 5;
+        object-fit: cover;    /* Ativa o modo de corte (enquadramento) */
+        object-position: center 76%; /* Ajustar o enquadramento */
+        margin: 0 auto;
+    }
+
+    .legad0__content {
+        order: -1;
+    }
+
+    /* ===============================SECTION LEGADO========================================= */
+
+    .localizacao__inner { padding: 0 24px; gap: 32px; }
+
+    .localizacao__content {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .localizacao__header { text-align: center; }
+
+    .localizacao__mapa {
+        height: 220px;
+        border-radius: 16px;
+    }
+
+    .localizacao__infos { gap: 12px; }
+
+    .localizacao__info-card {
+        padding: 14px 16px;
+    }
+
+    .localizacao__btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* ===============================SECTION PORQUE========================================= */
+    .porque__inner { padding: 0 24px; gap: 32px; }
+    .porque__card { flex: 0 0 80vw; min-width: 80vw; }
+
+    /* ===============================SECTION FOOTER========================================= */
+    .footer__inner {
+        grid-template-columns: 1fr;
+        gap: 36px;
+        padding: 40px 24px;
+        text-align: center;
+    }
+
+    .footer__desc { max-width: 100%; }
+
+    .footer__socials { justify-content: center; }
+
+    .footer__nav ul,
+    .footer__contato ul {
+      align-items: center;
+    }
+
+    .footer__contato li { justify-content: center; }
+
+    .footer__bottom {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+        padding: 20px 24px;
+    }
+
+    .footer__dev {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+    }
+
+    .footer__dev::before {
+        content: '';
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--span);
+        display: inline-block;
     }
 }
