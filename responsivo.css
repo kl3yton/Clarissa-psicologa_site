@@ -3,10 +3,9 @@
     .navbar { padding: 0 20px; }
     .navbar__links { display: none; }
     .navbar__cta { display: none; }
-    .navbar__hamburger { display: flex; }
-    
-  .navbar__hamburger {
-    display: none;
+
+    .navbar__hamburger {
+    display: flex;
     flex-direction: column;
     gap: 5px;
     background: none;
@@ -107,11 +106,11 @@
     .dores__intro { text-align: center; }
 
     .dores__item {
-   '     background: var(--white);
+        background: var(--white);
         border-radius: 16px;
         padding: 18px 20px;
         box-shadow: 0 2px 12px rgba(61,31,14,0.06);
-        align-'items: center;
+        align-items: center;
     }
 
     .dores__item--highlight {
@@ -360,8 +359,13 @@
 
     /* ===============================SECTION PORQUE========================================= */
     .porque__inner { padding: 0 24px; gap: 32px; }
-    .porque__card { flex: 0 0 80vw; min-width: 80vw; }
 
+    .porque__arrow { display: none; }
+
+    .porque__card {
+        flex: 0 0 100%;
+        min-width: 100%;
+    }
     /* ===============================SECTION FOOTER========================================= */
     .footer__inner {
         grid-template-columns: 1fr;

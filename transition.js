@@ -34,34 +34,50 @@ document.querySelectorAll('.faq__pergunta').forEach(btn => {
 
 // Carousel - Por que escolher
 (function () {
-  const track = document.querySelector('.porque__track');
-  const cards = document.querySelectorAll('.porque__card');
-  const dots  = document.querySelectorAll('.porque__dot');
+  const track   = document.querySelector('.porque__track');
+  const cards   = document.querySelectorAll('.porque__card');
+  const dots    = document.querySelectorAll('.porque__dot');
+  const prevBtn = document.querySelector('.porque__arrow--prev');
+  const nextBtn = document.querySelector('.porque__arrow--next');
   if (!track || !cards.length) return;
 
   let current = 0;
-  let timer   = null;
-  let paused  = false;
+  let timer = null;
+  let paused = false;
   let resumeTimer = null;
+  let syncing = false;
 
   function getVisible() {
     return window.innerWidth <= 1020 ? 1 : 2;
   }
 
-  function goTo(index) {
-    const visible = getVisible();
-    const max = cards.length - visible;
-    current = Math.max(0, Math.min(index, max));
-    const cardW = cards[0].getBoundingClientRect().width;
-    const gap   = 24;
-    track.style.transform = `translateX(-${current * (cardW + gap)}px)`;
+  function getStep() {
+    const gap = parseFloat(getComputedStyle(track).gap) || 24;
+    return cards[0].getBoundingClientRect().width + gap;
+  }
+
+  function maxIndex() {
+    return Math.max(0, cards.length - getVisible());
+  }
+
+  function updateDots() {
     dots.forEach((d, i) => d.classList.toggle('active', i === current));
   }
 
+  function goTo(index) {
+    current = Math.max(0, Math.min(index, maxIndex()));
+    syncing = true;
+    track.scrollTo({ left: current * getStep(), behavior: 'smooth' });
+    updateDots();
+    setTimeout(() => { syncing = false; }, 500);
+  }
+
   function next() {
-    const visible = getVisible();
-    const max = cards.length - visible;
-    goTo(current >= max ? 0 : current + 1);
+    goTo(current >= maxIndex() ? 0 : current + 1);
+  }
+
+  function prev() {
+    goTo(current <= 0 ? maxIndex() : current - 1);
   }
 
   function startAuto() {
@@ -72,8 +88,12 @@ document.querySelectorAll('.faq__pergunta').forEach(btn => {
   function pauseAndResume() {
     paused = true;
     clearTimeout(resumeTimer);
-    resumeTimer = setTimeout(() => { paused = false; }, 3000);
+    resumeTimer = setTimeout(() => { paused = false; }, 4000);
   }
+
+  // Setas (desktop)
+  if (prevBtn) prevBtn.addEventListener('click', () => { prev(); pauseAndResume(); });
+  if (nextBtn) nextBtn.addEventListener('click', () => { next(); pauseAndResume(); });
 
   // Dots
   dots.forEach(dot => {
@@ -83,20 +103,19 @@ document.querySelectorAll('.faq__pergunta').forEach(btn => {
     });
   });
 
-  // Touch / drag
-  let startX = 0;
-  track.addEventListener('touchstart', e => {
-    startX = e.touches[0].clientX;
+  // Swipe nativo (mobile) - sincroniza os dots com a posição do scroll
+  let scrollTimeout = null;
+  track.addEventListener('scroll', () => {
     pauseAndResume();
+    if (syncing) return;
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(() => {
+      const step = getStep();
+      current = Math.round(track.scrollLeft / step);
+      current = Math.max(0, Math.min(current, maxIndex()));
+      updateDots();
+    }, 100);
   }, { passive: true });
-
-  track.addEventListener('touchend', e => {
-    const diff = startX - e.changedTouches[0].clientX;
-    if (Math.abs(diff) > 40) diff > 0 ? next() : goTo(current - 1);
-  });
-
-  // Scroll na página pausa
-  window.addEventListener('scroll', pauseAndResume, { passive: true });
 
   // Aba em segundo plano
   document.addEventListener('visibilitychange', () => {
