@@ -813,7 +813,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  background: #25D366;
+  background: #27a354;
   color: var(--white);
   font-family: 'Inter', sans-serif;
   font-size: 0.9rem;
@@ -1251,7 +1251,7 @@ body {
   align-items: center;
   justify-content: space-between;
   font-size: 0.78rem;
-  color: rgba(255,255,255,0.35);
+  color: rgba(255, 255, 255, 0.73);
 }
 
 .footer__dev {

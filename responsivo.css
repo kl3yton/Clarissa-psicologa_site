@@ -60,7 +60,7 @@
 
     .hero__img-wrap {
         max-width: 450px;
-        aspect-ratio: 1 / 0.85;
+        aspect-ratio: 1 / 0.90;
         border-radius: 70% 50% 65% 55% / 40% 80% 50% 90%;
         margin: 0 auto;
     }
