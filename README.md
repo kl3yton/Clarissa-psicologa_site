@@ -2,7 +2,7 @@
 
 Landing page institucional desenvolvida para a psicóloga clínica **Clarissa Pinto**, com foco em conversão, apresentação de serviços em Terapia Cognitivo-Comportamental (TCC) e Psicologia do Esporte, e captação de pacientes para atendimentos presenciais e online.
 
-🔗 **Acesse o site:** [clarissapinto.com.br](https://clarissapinto.com.br/)
+**Acesse o site:** [clarissapinto.com.br](https://clarissapinto.com.br/)
 
 ---
 
