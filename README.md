@@ -6,7 +6,7 @@ Landing page institucional desenvolvida para a psicóloga clínica **Clarissa Pi
 
 ---
 
-## 📌 Sobre o Projeto
+## Sobre o Projeto
 
 O projeto foi construído para transmitir credibilidade, acolhimento e profissionalismo. A arquitetura da página foi pensada estrategicamente como uma landing page de alta conversão, guiando o visitante através de:
 
@@ -20,7 +20,7 @@ O projeto foi construído para transmitir credibilidade, acolhimento e profissio
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **HTML5 Semântico:** Estruturação acessível e otimizada para SEO.
 - **CSS3 / Modern Styling:** Layout responsivo, tipografia equilibrada e paleta visual acolhedora.
@@ -29,7 +29,7 @@ O projeto foi construído para transmitir credibilidade, acolhimento e profissio
 
 ---
 
-## ✨ Funcionalidades Principais
+## Funcionalidades Principais
 
 - **Design Responsivo:** Adaptado para smartphones, tablets e desktops.
 - **Conversão Otimizada (Direct-to-WhatsApp):** Botões estratégicos com mensagens pré-formatadas para agendamento.
